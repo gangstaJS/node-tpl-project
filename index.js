@@ -15,3 +15,5 @@ app.use('/', require('./controllers/app'));
 
 app.listen(3333);
 
+module.exports = app;
+
