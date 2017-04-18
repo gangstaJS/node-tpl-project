@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const config = require('config');
 const morgan = require('morgan');
 const winston = require('winston');
 
@@ -13,7 +14,7 @@ app.use(morgan('combined'));
 // Controllers import
 app.use('/', require('./controllers/app'));
 
-app.listen(3333);
+app.listen(config.port);
 
 module.exports = app;
 
