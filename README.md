@@ -1,1 +1,1 @@
-# glasses-api
+# Template Project for Node.JS
